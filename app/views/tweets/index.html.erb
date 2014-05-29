@@ -1,22 +1,13 @@
-<h1>Listing tweets</h1>
+<h1 class="tweets_header"><%=image_tag "favicon.png"%></h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Body</th>
-      <th>Handle</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
+<table class="tweets_list">
   <tbody>
     <% @tweets.each do |tweet| %>
       <tr>
-        <td><%= tweet.body %></td>
-        <td><%= tweet.handle %></td>
-        <td><%= link_to 'Show', tweet %></td>
+        <td class="tweet_handle"><%= tweet.handle %></td>
+        <td class="tweet_body"><%= tweet.body %></td>
         <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
-        <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +15,6 @@
 
 <br>
 
-<%= link_to 'New Tweet', new_tweet_path %>
+<div class="new_tweet_link">
+  <%= link_to 'New Tweet', new_tweet_path %>
+</div>
