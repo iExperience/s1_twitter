@@ -26,3 +26,23 @@ body {
 	background-color: #3D5F80;
 }
 
+a, p, td, th {
+	font-family: "Lato", sans-serif;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.footer {
+	text-align: center;
+	color: #fff;
+	margin-top: 40px;
+	a {
+		margin: 0px 5px;
+		font-size: 16px;
+		color: #fff;
+	}
+}
+

@@ -2,10 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.tweets_header {
-	text-align: center;
-}
-
 .tweets_list {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -14,12 +10,7 @@
 	background-color: #eee;
 	padding: 5px;
 
-	a {
-		color: #FD007A;
-	}
-
-	td, th {
-		font-family: "Lato", sans-serif;
+	td {
 		padding: 5px;
 	}
 
@@ -30,6 +21,10 @@
 
 	.tweet_body {
 		font-size: 15px;
+	}
+
+	a {
+		color: #FD007A;
 	}
 }
 
@@ -43,7 +38,7 @@
 	padding: 10px;
 
 	a {
-		color: #fff;
 		text-decoration: none;
+		color: #fff;
 	}
 }
