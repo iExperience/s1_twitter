@@ -11,18 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140525145824) do
+ActiveRecord::Schema.define(version: 20140601195832) do
 
   create_table "tweets", force: true do |t|
     t.string   "body"
     t.string   "handle"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
   end
 
   create_table "users", force: true do |t|
     t.string   "handle"
+    t.string   "profile_pic"
+    t.text     "bio"
+    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
