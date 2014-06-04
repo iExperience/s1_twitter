@@ -16,8 +16,8 @@
     <%= f.text_field :body %>
   </div>
   <div class="field">
-    <%= f.label :handle %><br>
-    <%= f.text_field :handle %>
+    <%= f.label :user_id %><br>
+    <%= f.select :user_id, @users.map { |u| [u.handle, u.id] } %>
   </div>
   <div class="actions">
     <%= f.submit %>

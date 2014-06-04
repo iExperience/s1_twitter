@@ -12,6 +12,7 @@
 
 	td {
 		padding: 5px;
+		color: #000;
 	}
 
 	.tweet_handle {
@@ -37,7 +38,7 @@
 	width: 100px;
 	padding: 10px;
 
-	a {
+	a, a:visited, a:hover {
 		text-decoration: none;
 		color: #fff;
 	}

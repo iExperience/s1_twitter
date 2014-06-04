@@ -1,4 +1,6 @@
 class Tweet < ActiveRecord::Base
+	belongs_to :user
+
 	def self.tuesday_tweets
 		Tweet.where(:created_at => "Tuesday")
 	end

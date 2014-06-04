@@ -26,8 +26,13 @@ body {
 	background-color: #3D5F80;
 }
 
-a, p, td, th {
+a, p, td, th, h1, label {
 	font-family: "Lato", sans-serif;
+	color: #fff;
+}
+
+a, a:visited, a:hover {
+	color: #FD007A;
 }
 
 .header {
