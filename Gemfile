@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby "2.1.1"
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
@@ -39,6 +37,17 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'rails_12factor', group: :production
 
-gem 'sqlite3', group: :development
+gem 'pg'
 
-gem 'pg', group: :production
+group :development, :test do
+  gem 'shoulda'
+  gem 'jazz_hands'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner', '1.0.1'
+  gem 'selenium-webdriver'
+end
